@@ -32,7 +32,7 @@ func (q *Quotes) GetQuote() string {
 }
 ```
 
-Our Quotes struct has one method `GetQuote`. When this is bound to the application, Wails will bind it to the frontend as `backend.Quotes`. Because `GetQuote` is an exposed method, it will be bound in the frontend as `backend.Quotes.GetQuote`. 
+Our `Quotes` struct has one method `GetQuote`. When this is bound to the application, Wails will bind it to the frontend as `backend.Quotes`. Because `GetQuote` is an exposed method, it will be bound in the frontend as `backend.Quotes.GetQuote`. 
 
 The NewQuotes method is simply a convention for creating a new instance of a struct. Wails requires that structs are instantiated before binding, so we will use this function in the main app.
 
